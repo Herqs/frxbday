@@ -18,7 +18,7 @@ const wheel = Wheel.create(canvas);
 wheel.setChoices(CHOICES);
 
 function spin() {
-  if (wheel.spinning) return;
+  if ($('spin').disabled) return;
   $('spin').disabled = true;
   const r = $('result');
   r.classList.remove('show');
@@ -30,7 +30,6 @@ function spin() {
       r.textContent = CHOICES[i];
       void r.offsetWidth;
       r.classList.add('show');
-      $('spin').disabled = false;
     },
   });
 }
