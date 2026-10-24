@@ -71,7 +71,7 @@ const Wheel = (() => {
         ctx.fillText('Add choices', c, c);
       } else {
         const seg = SEG_ANGLE(n);
-        const fontSize = Math.min(20, Math.max(10, 30 - n));
+        const fontSize = Math.min(16, Math.max(10, 30 - n));
         ctx.font = `bold ${fontSize}px sans-serif`;
         ctx.textAlign = 'right';
         ctx.textBaseline = 'middle';
